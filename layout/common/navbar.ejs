@@ -13,8 +13,12 @@
             <% if (has_config('navbar.menu')) { %>
             <div class="navbar-start">
                 <% for (let i in get_config('navbar.menu')) { let menu = get_config('navbar.menu')[i]; %>
-                <a class="navbar-item<% if (typeof(page.path) !== 'undefined' && is_same_link(menu, page.path)) { %> is-active<% } %>"
-                href="<%- url_for(menu) %>"><%= __('menu.'+i) %></a>
+                <a class="navbar-item<% if (typeof(page.path) !== 'undefined' && is_same_link(menu.path, page.path)) { %> is-active<% } %>"
+                href="<%- url_for(menu.path) %>">
+                <i class="<%=menu.icon%>"></i>
+                <%= __('menu.'+menu.name) %>
+                    
+                </a>
                 <% } %>
             </div>
             <% } %>

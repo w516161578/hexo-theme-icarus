@@ -7,14 +7,34 @@ module.exports = {
         [type]: 'object',
         [doc]: 'Navigation bar menu links',
         [defaultValue]: {
-            Home: '/',
-            Archives: '/archives',
-            Categories: '/categories',
-            Tags: '/tags',
-            About: '/about'
+            '1': {
+                name: 'Home',
+                icon: 'fas fa-home',
+                path: '/'
+            },
+            '2': {
+                name: 'Archives',
+                path: '/archives',
+                icon: 'fas fa-archive'
+            },
+            '3': {
+                name: 'Categories',
+                path: '/categories',
+                icon: 'fas fa-th-list'
+            },
+            '4': {
+                name: 'Tags',
+                path: '/tags',
+                icon: 'fas fa-tags'
+            },
+            '5': {
+                name: 'About',
+                path: '/about',
+                icon: 'fas fa-user'
+            }
         },
         '*': {
-            [type]: 'string',
+            [type]: 'object',
             [doc]: 'Path or URL to the menu item'
         }
     },
