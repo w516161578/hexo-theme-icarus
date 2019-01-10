@@ -364,13 +364,23 @@ figure.highlight
     position: relative
     margin: 1em 0 1em !important
 
+    table tr
+        background: inherit
+        color: inherit
+        border: none
+
     pre,
     table tr:hover
         color: inherit
         background: transparent
+        border: none
+        
+    table tr td
+        border: none
 
     table
         width: auto
+        border: none
 
     pre
         padding: 0
@@ -399,6 +409,10 @@ figure.highlight
 
     .gutter
         text-align: right
+    .gutter
+        pre
+            background-color: #000
+        background-color: #000
 
     .tag,
     .title,
@@ -424,6 +438,12 @@ figure.highlight
         background: rgba(0, 0, 0, 0.5)
     &:hover .copy
         display: block
+    .code
+        pre
+            background-color: #282c34
+        background-color: #282c34
+
+        
 
 /* ---------------------------------
  *        Fix Gist Snippet
