@@ -16,7 +16,7 @@ common:
 widget:
     follow: '关注我'
     recents: '最新文章'
-    links: '链接'
+    links: '友情链接'
     tag_cloud: '标签云'
     catalogue: '目录'
 article:
@@ -41,3 +41,9 @@ insight:
     categories: '分类'
     tags: '标签'
     untitled: '(无标题)'
+menu:
+    Home: '首页'
+    Archives: '归档'
+    Categories: '目录'
+    Tags: '标签'
+    About: '关于'
