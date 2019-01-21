@@ -1,3 +1,11 @@
+fork from icarus.
+### 修改内容如下：
+- 菜单栏i18n支持
+- 菜单栏增加icon
+- 修改表格样式，增加边框
+- 修改文章内简短代码格式
+------
+    
 <p align="center" class="has-mb-6">
 <img class="not-gallery-item" height="48" src="http://ppoffice.github.io/hexo-theme-icarus/images/logo.svg">
 <br> A simple, delicate, and modern theme for the static site generator Hexo.
